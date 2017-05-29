@@ -1,0 +1,142 @@
+
+/*COMP1950
+Instructor: Jeffrey Park
+DTC Thur 6-9PM
+
+Created by:
+Sam Chung*/
+
+header,
+body {
+    font-family: 'PT Serif', serif;
+}
+
+#main-header {
+    background-color: #4286f4;
+    color: white;
+    text-shadow: 1px 1px black;
+    text-align: center;
+    padding: 2px;
+    font-size: 1.5em;
+}
+
+#main-nav {
+    display: inline-block;
+    font-family: 'PT Sans', sans-serif;
+    margin-top: 10px;
+}
+
+#main-nav-list-left {
+    display: inline-block;
+}
+
+#main-nav ol {
+    list-style-type: none;
+}
+
+#main-nav li {
+    display: inline;
+}
+
+#main-nav a {
+    margin: 5px 5px 5px 5px;
+    border: solid grey 1px;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+#main-nav a:link {
+    text-decoration: none;
+    color: #0a306d;
+}
+
+#main-nav a:visited {
+    color: #0a306d
+}
+
+#main-nav a:hover {
+    background-color: #4286f4;
+    color: white;
+}
+
+#main-nav a:active {
+    color: #0a306d
+}
+
+main,
+footer {
+    padding-left: 2em;
+}
+
+#side-nav {
+    position: fixed;
+    max-height: 80%;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#side-nav li {
+    margin: 10px;
+}
+
+#side-nav a:link,
+#side-nav a:visited,
+#side-nav a:active {
+    text-decoration: none;
+    color: #0a306d;
+}
+
+#side-nav a:hover {
+    color: #4286f4;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.container,
+.row {
+    width: 100%;
+}
+
+.col-1 {
+    width: 100%;
+}
+
+.col-2 {
+    width: 66.67%;
+}
+
+.col-3 {
+    width: 33.33%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+article {
+    border-bottom: solid grey 1px;
+}
+
+article p {
+    padding: 10px 10px 10px 0px;
+}
+
+footer {
+    padding: 25px;
+    clear: both;
+}

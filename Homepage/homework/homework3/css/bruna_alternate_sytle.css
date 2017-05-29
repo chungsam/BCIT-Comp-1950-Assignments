@@ -1,0 +1,412 @@
+/*
+COMP1950
+Instructor: Jeffrey Park
+
+Created by:
+Bruna Ramos Vieira A00985171
+*/
+
+
+/*********************************************************************************/
+/*                                                                           */
+/*********************************************************************************/
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+* {
+    font-family: 'Lato', sans-serif;
+}
+p
+{
+	line-height: 180%;
+    display: block;
+    font-size: 150%;
+}
+
+a {
+    color: #F2B33F;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2B4056;
+}
+
+h2, h3
+{
+    font-weight: 200;
+}
+
+
+html, body
+{
+	height: 100%;
+}
+	
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background: #333333;
+	font-family: 'Varela', sans-serif;
+	font-size: 12pt;
+	font-weight: 300;
+	color: #656565;
+}
+
+#wrapper {
+ 	background: #FFF;
+}
+
+
+/*********************************************************************************/
+/* Header                                                                          */
+/*********************************************************************************/
+
+header 
+{
+	text-align: center;
+	background: transparent url("images/background1.png") repeat top left;
+	background-size: cover;
+
+}
+
+#profile-pic {
+
+    border-radius: 100%;
+    display: inline-block;
+    margin: 6em 0 0 0;
+    padding: 0.9em;
+    border: solid 1px rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.075);
+	width: 25%;
+	height: 25%;
+	
+}
+
+#my-name {
+    color: #FFF;
+	font-size: 320%;
+    animation-duration: 5s;
+    animation-name: zoomIn;
+    font-weight: bold;
+
+}
+
+header h3
+{
+	color: #FFF;
+}
+
+header h2
+{
+     padding: 0 0 1em 0;
+	 font-size: xx-large;
+	 color: #FFF;
+     font-weight: bold;
+     
+}
+
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+
+nav
+{
+	position: absolute;
+    top: 2em;
+    right: 0;
+}
+	
+nav ul
+{
+	display: inline-block;
+}
+	
+nav li
+{
+	display: block;
+	float: left;
+    padding-right: 15px;
+	text-align: center;
+}
+
+nav ol
+{
+	visibility: hidden !important;
+}
+	
+nav li a, nav li span
+{
+	padding: 1em 1.5em;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	color: #FFF;
+}
+	
+nav li:hover a, nav li.active a, nav li.active span
+{
+	background: #dc572e;
+	border-radius: 7px;
+	color: #FFF;
+}
+	
+nav .current_page_item a
+{
+	color: #FFF;
+}
+
+#header-title 
+{
+    margin: 0;
+}
+	
+
+/*********************************************************************************/
+/* Main Sections                                                                 */
+/*********************************************************************************/
+
+
+#about
+{
+	padding: 2em 12em 5em 12em;
+    text-align: center;
+}
+
+#about h3.bg-purple
+{   background-color: #FFF;
+    padding: 5px;
+ 	text-align: center;
+    text-transform: uppercase;
+    font-size: 1.7em;
+    font-weight: bold;
+    text-decoration: underline;
+     
+}
+
+/* Tools */
+#tools
+{
+	padding: 2em 12em 5em 12em;
+	background-color: #2A4058;
+	color: #FFF;
+    text-align: center;
+}
+
+
+#tools h3.bg-purple
+{
+	background-color: #2A4058;
+	color: #FFF;
+	padding: 5px;
+ 	text-align: center;
+    text-transform: uppercase;
+    font-size: 1.7em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#tools-table 
+{
+  height:300px;
+  overflow-x:auto;
+  border: 1px solid rgba(255,255,255,0.3);
+  width: auto;
+  table-layout: fixed;
+  border-collapse: collapse;
+  margin: 0em auto;
+}
+
+
+#tools-table th
+{
+  padding: 15px;
+  text-align: center;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 150%;
+  color: #fff;
+  background-color:rgba(255,255,255,0.3);;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+
+#tools-table td
+{
+    font-size: 120%;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-collapse: collapse;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+
+#tools-table a:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* Favorite Sites */
+#fav-sites 
+{
+ 	text-align: center;
+    padding: 2em 12em 5em 12em;
+}
+
+
+#fav-sites-table 
+{
+ 	overflow: hidden;
+    margin: 0em auto;
+    border-spacing:50px;
+}
+
+#fav-sites h3.bg-purple
+{
+	background-color: #FFF;
+ 	text-align: center;
+    text-transform: uppercase;
+    font-size: 1.7em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#fav-sites h4
+{
+ 	text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+   
+}
+
+#fav-sites p
+{
+	line-height: 188%;
+    display: block;
+}
+
+#fav-sites a
+{
+    font-size: 1.7em;
+}
+
+#fav-sites-table td:nth-child(1) 
+{
+    width: 1000px;
+    height: auto;
+}
+
+#fav-sites-table td:nth-child(2) 
+{
+
+    width: 1000px;
+    height: auto;
+}
+
+
+#fav-sites-table td:nth-child(2):before  
+{
+    content: "\A";
+    white-space: pre;
+}
+
+#fav-sites-table td {
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+/* Homework */
+
+#homework
+{
+	padding: 2em 12em 5em 12em;
+    text-align: center;
+	background-color: #2A4058;
+	color: #FFF;
+}
+
+
+#homework  h3.bg-purple
+{
+	background-color: #2A4058;
+	color: #FFF;
+	padding: 5px;
+ 	text-align: center;
+    text-transform: uppercase;
+    font-size: 1.7em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#homework-list 
+{
+    list-style: none;
+    list-style-position: inside;
+    font-size: 1.5em;
+}
+
+
+#homework a:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+
+/*********************************************************************************/
+/* Main Sections                                                                 */
+/*********************************************************************************/
+
+/* zocial */
+
+[class*="zocial-"]:before {
+    font-family: 'zocial', sans-serif;
+}
+
+
+/* Animated strikethrough
+Credit to: http://codepen.io/EdenSG/pen/jPENoE/ */
+
+.strikethrough_animate {
+    display: inline-block;
+    position: relative;
+    color: grey;
+}
+
+.strikethrough_animate:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: -0.5em;
+    background: grey;
+    transform-origin: center left;
+    animation: strikethrough 1s 0.5s cubic-bezier(.55, 0, .1, 1) 1;
+    transition: transform 0.5s cubic-bezier(.55, 0, .1, 1);
+}
+
+
+/* Keyframes for initial animation */
+
+@keyframes strikethrough {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}

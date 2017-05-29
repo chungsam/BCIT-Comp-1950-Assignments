@@ -1,0 +1,41 @@
+h1 > acronym {
+    border: solid 1px black;
+}
+
+section p:first-letter {
+    font-size: 2em;
+}
+
+section p > strong:first-of-type {
+    border: solid 1px white;
+}
+
+section p > strong em {
+    background-color: white;
+}
+
+section p > abbr {
+    background-color: yellow;
+}
+
+section ul {
+    background-color: lightsteelblue;
+}
+
+ul li ul li {
+    color: white;
+}
+
+section > ul > li:last-of-type {
+    border: solid 1px yellow;
+}
+
+aside ul li:first-of-type a,
+aside ul li:nth-of-type(2N) a{
+    background-color: white;
+    font-weight: bold;
+}
+
+aside ul li:first-of-type a acronym{
+    background-color: lightsteelblue;
+}

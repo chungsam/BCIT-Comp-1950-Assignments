@@ -1,0 +1,222 @@
+<!--
+    COMP1950
+    Instructor: Jeffrey Park
+    DTC Thur 6-9PM
+
+    Created by:
+    Sam Chung
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>COMP1950 - Homework 2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--CSS files-->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+    <!--JS files-->
+    <!-- Link JQuery file here. Only using jQuery to make progress bar dynamic based on scroll-->
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <!--Custom JS files-->
+    <script src="js/main.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1 class="background_blue font_white">Homework 2</h1>
+    </header>
+    <div id="container">
+        <div class="progress_container">
+            <progress value="0" max="100"></progress>
+        </div>
+        <main>
+
+            <!--Two favorite places to visit-->
+            <section>
+                <h1 class="background_light">Two Places You Must Visit!</h1>
+                <article id="favorite_places">
+                    <ol>
+                        <li>
+                            <article>
+                                <h3>1. Tofino, BC</h3>
+                                <div id="tofino_video" class="embedded_video">
+                                    <figure>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/KGnoGpi7Dmo" allowfullscreen></iframe>
+                                        <figcaption>Tofino, BC</figcaption>
+                                    </figure>
+                                </div>
+                                <p>Nestled in the western edge of Vancouver Island,
+                                    <mark><a href="hello">Tofino is a truly otherworldly place that
+                                    is less than a day's commute away</a></mark>. The beaches are a beginner surfer's paradise,
+                                    with winds just strong enough and waves perfect for both first-time and experience surfers.
+                                </p>
+                                <p>
+                                    You can also hike along the coast and take in the views of the coast and listen to waves crashing against the rocks that
+                                    edge the innumerable crevices that line the coast.
+                                </p>
+
+                                <figure>
+                                    <img id="tofino_beach_pic" src="images/tofino-beach.jpg" alt="Tofino beach">
+                                    <figcaption>Chesterman beach, one of many beautiful beaches in Tofino, BC.</figcaption>
+                                </figure>
+
+                                <p>Go out and explore!</p>
+                            </article>
+                        </li>
+                        <li>
+                            <article>
+
+                                <h3>2.Cultus Lake, BC</h3>
+                                <div id="cultus_lake_video" class="embedded_video">
+                                    <figure>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/MppJpGkCq9o" allowfullscreen></iframe>
+                                        <figcaption>Cultus Lake, BC</figcaption>
+                                    </figure>
+                                </div>
+                                <p>Less than an hour's drive from Vancouver,
+                                    <mark><a href="http://www.cultuslake.bc.ca/" target="_blank">Cultus Lake is a beautiful park that is perfect
+                                    for a picnic/barbecue, swimming, boating, and other water activities</a></mark>. The
+                                    lake is vast that you'll mistaken it for the ocean.
+                                </p>
+                                <p>Once you've spent some time at the beach, you can have some fun at Cultus Lake Waterpark,
+                                    one of the biggest waterparks in Western Canada. And if you still feel restless, you
+                                    can go visit some nearby wineries, as well as hike or mountain bike on the many trails
+                                    that are just a few minutes' drive away.
+                                </p>
+                                <figure>
+                                    <img id="cultus_lake_beach_pic" src="images/cultus-lake-beach.jpg" alt="Cultus Lake beach">
+                                    <figcaption>Beautiful beachside view of the lake in Cultus Lake, BC</figcaption>
+                                </figure>
+                                <p>Get out there soon!</p>
+
+                            </article>
+                        </li>
+                    </ol>
+                </article>
+            </section>
+
+            <hr />
+
+            <!---->
+
+            <!--Two New HTML5 elements-->
+            <section>
+                <article id="html5_elements">
+                    <h2 class="background_light">Two New HTML5 Elements</h2>
+                    <p>The below content was taken from the <a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/"
+                            target="_blank">Mozilla Developer's Network official HTML element reference pages</a>.
+                    </p>
+                    <table>
+                        <colgroup>
+                            <col style="width:10%">
+                            <col style="width:20%">
+                            <col>
+                            <col style="width:20%">
+                            <col>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>Element</th>
+                                <th>Semantics/Rules of Use</th>
+                                <th>Attributes</th>
+                                <th>Browser Compatibility</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code><strong>&lt;progress&gt;</strong></code></td>
+                                <td>
+                                    <p>The HTML
+                                        <code><strong>&lt;progress&gt;</strong></code> element represents the completion
+                                        progress of a task, typically displayed as a progress bar.
+                                    </p>
+                                </td>
+                                <td>
+                                    <code><strong>max</strong></code>
+                                    <p>This attribute describes how much work the task indicated by the progress element requires.
+                                        The max attribute, if present, must have a value greater than zero and be a valid
+                                        floating point number. The default value is 1.</p>
+                                    <code><strong>value</strong></code>
+                                    <p>This attribute specifies how much of the task that has been completed. It must be a valid
+                                        floating point number between 0 and max, or between 0 and 1 if max is omitted. If
+                                        there is no value attribute, the progress bar is indeterminate; this indicates that
+                                        an activity is ongoing with no indication of how long it is expected to take.
+                                    </p>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Chrome: Yes</li>
+                                        <li>Edge: Yes</li>
+                                        <li>Firefox :Yes</li>
+                                        <li>IE: 9.0 and above</li>
+                                        <li>Opera: 11.0 and above</li>
+                                        <li>Safari: Yes</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/progress" target="_blank">Official HTML reference at MDN</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code><strong>&lt;mark&gt;</strong></code></td>
+                                <td>
+                                    <p>The HTML
+                                        <code><strong>&lt;mark&gt;</strong></code> element represents highlighted text, i.e.,
+                                        a run of text marked for reference purpose, due to its relevance in a particular
+                                        context. For example it can be used in a page showing search results to highlight
+                                        every instance of the searched-for word.
+                                    </p>
+                                </td>
+                                <td>
+                                    Only global attributes.
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Chrome: Yes</li>
+                                        <li>Edge: Yes</li>
+                                        <li>Firefox :Yes</li>
+                                        <li>IE: 9.0 and above</li>
+                                        <li>Opera: 11.0 and above</li>
+                                        <li>Safari: Yes</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/mark" target="_blank">Official HTML reference at MDN</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </section>
+
+            <!---->
+
+        </main>
+
+    </div>
+
+    <footer>
+        <!--Footer links-->
+
+        <!--HTML Validator link-->
+        <a href="http://validator.w3.org/check?uri=referer">referer link</a>
+        <br />
+        <a href="../../index.html">back to Home</a>
+
+        <p>Created by Sam Chung on
+            <time datetime="2017-04-26">April 26, 2017</time>
+        </p>
+    </footer>
+</body>
+
+
+</html>

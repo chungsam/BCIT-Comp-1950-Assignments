@@ -1,0 +1,134 @@
+/*
+COMP1950
+Instructor: Jeffrey Park
+DTC Thur 6-9PM
+
+Created by:
+Sam Chung
+*/
+
+* {
+    font-family: 'Roboto Slab', serif;
+}
+
+header h1 {
+    margin-top: 50px;
+    padding-left: 15px;
+}
+
+body {
+    margin: auto;
+    max-width: 960px;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+#favorite_places ol {
+    list-style: none;
+}
+
+section h1, section h2, section h3 {
+    padding-left: 15px;
+    font-size: 1.3em;
+}
+
+article p {
+    margin: 0px;
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #4242f4;
+}
+
+a:hover {
+    text-decoration: none;
+    background-color: #99bdf7;
+}
+
+mark a {
+    color: black;
+}
+
+mark a:hover {
+    background-color: #99bdf7;
+}
+
+table {
+    font-size: 0.85em;
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+}
+
+th,
+td {
+    padding: 5px;
+    text-align: left;
+    vertical-align: middle;
+    border: 1px solid #dddddd;
+}
+
+th {
+    text-align: left;
+}
+
+table ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer p {
+    text-align: right;
+}
+
+#container {
+    max-width: 960px;
+}
+
+#tofino_beach_pic,
+#cultus_lake_beach_pic,
+figcaption {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 560px;
+}
+
+progress {
+    margin: 10px;
+    width: inherit;
+}
+
+.progress_container {
+    position: fixed;
+    top: 0px;
+    width: 97%;
+    max-width: 960px;
+    margin: auto;
+}
+
+.font_white {
+    color: white;
+}
+
+.background_blue {
+    background: #4e52c4;
+}
+
+.background_light {
+    background: #c2c4f9;
+}
+
+.embedded_video iframe {
+    display: block;
+    margin: auto;
+    border: none;
+}
+
+footer a {
+    display: inline-block;
+}

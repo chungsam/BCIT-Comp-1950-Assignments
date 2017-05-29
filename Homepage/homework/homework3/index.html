@@ -1,0 +1,132 @@
+<!--
+    COMP1950
+    Instructor: Jeffrey Park
+    DTC Thur 6-9PM
+
+    Created by:
+    Sam Chung
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home - Sam Chung's COMP1950 Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" title="Default CSS (by Sam)" href="css/style.css" >
+   <link rel="alternate stylesheet" title="Alternate CSS (by Bruna)" href="css/bruna_alternate_sytle.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,900" >
+</head>
+
+<body>
+    <div id="wrapper">
+        <!--Profile header-->
+        <header>
+            <div id="header-title">
+                <img id="profile-pic" src="images/profile-pic.jpg" width="125" height="125" alt="profile picture">
+                <h1><span id="my-name">Sam Chung</span></h1>
+                <h3><span class="strikethrough_animate">Accountant</span> <span class="strikethrough_animate">Financial Analyst</span></h3>
+                <h2>Web Developer</h2>
+            </div>
+        </header>
+
+        <!--Side Nav-->
+        <nav>
+            <ul>
+                <li><a href="#about">Me</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#fav-sites">Favorite Sites</a></li>
+                <li><a href="#homework">Homework</a>
+                    <ol>
+                        <li><a href="homework/homework2/index.html">Homework 2</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <!--HTML validator-->
+                    <a href="http://validator.w3.org/check?uri=referer">Referer link</a></li>
+            </ul>
+        </nav>
+
+        <!--Main sections-->
+        <main>
+            <section id="about">
+                <div>
+                    <h3 class="bg-purple">About Me</h3>
+                    <p>I'm a financial analyst that fell in love with programming/web development about two years ago. Since
+                        then, I've had experience with HTML, CSS and JavaScript to create simple websites. I've also dabbled
+                        in various object-oriented languages such as C#, Java and Python.</p>
+
+                    <p>In addition to COMP 1950, I'm also taking an online "Front-End Nanodegree" program offered by <a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001">Udacity</a>.
+                    </p>
+                </div>
+            </section>
+
+            <section id="tools">
+                <h3 class="bg-purple">Tools I Use for Web Development</h3>
+                <p>Here are some of my favorite tools when it comes to web development:</p>
+                <table id="tools-table">
+                    <tr>
+                        <th>Tool</th>
+                        <th>Why I like it</th>
+                        <th>Website</th>
+                    </tr>
+                    <tr>
+                        <td>Visual Studio Code</td>
+                        <td>Really great lightweight but powerful code editor with monthly updates from Microsoft.</td>
+                        <td><a href="https://code.visualstudio.com/" target="_blank">Link</a></td>
+                    </tr>
+                    <tr>
+                        <td>Google Fonts</td>
+                        <td>Awesome open-source fonts.</td>
+                        <td><a href="https://developers.google.com/fonts/" target="_blank">Link</a></td>
+                    </tr>
+                    <tr>
+                        <td>Node Package Manager (npm)</td>
+                        <td>Essential package manager for front-end development with JavaScript.</td>
+                        <td><a href="https://www.npmjs.com/" target="_blank">Link</a></td>
+                    </tr>
+
+
+                </table>
+            </section>
+
+            <section id="fav-sites">
+                <h3 class="bg-purple">Favorite Sites</h3>
+                <p>Here are some of my favorite websites that inspire me.</p>
+                <table id="fav-sites-table">
+                    <tr>
+                        <td>
+                            <h4>The Wall Street Journal</h4>
+                            <a href="http://www.wsj.com" target="_blank">www.wsj.com</a>
+                            <p>The best news source on the planet. Website transforms a familiar paper medium into a sensible
+                                and well-thought out digital form.
+                        </td>
+                        <td>
+                            <h4>Aeon</h4>
+                            <a href="http://www.aeon.co" target="_blank">www.aeon.co</a>
+                            <p>A wonderful magazine website in which every feature article is a beautiful webpage in itself.
+                                Great typography and layout makes each article a delight to read.
+                        </td>
+
+                    </tr>
+                </table>
+            </section>
+
+            <section id="homework">
+                <h3 class="bg-purple">Homework</h3>
+                <ol id="homework-list">
+                    <li><a href="homework/homework2/index.html">Homework 2</a></li>
+                </ol>
+            </section>
+        </main>
+    </div>
+    
+    <script>
+        window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+        }
+    </script>
+
+</body>
+
+</html>

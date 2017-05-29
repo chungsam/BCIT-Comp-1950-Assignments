@@ -1,0 +1,204 @@
+/*
+COMP1950
+Instructor: Jeffrey Park
+DTC Thur 6-9PM
+
+Created by:
+Sam Chung
+*/
+
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    color: #761ced;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #02d1bf;
+}
+
+h2,
+h3,
+h4 {
+    font-weight: 200;
+}
+
+header {
+    text-align: center;
+    margin-left: 200px;
+}
+
+nav {
+    float: left;
+    width: 200px;
+    overflow: auto;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav ul li a {
+    display: block;
+    text-align: left;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #4d4d4d;
+}
+
+nav ul li a:link {
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    background-color: #e8dbf9;
+    color: #761ced;
+}
+
+nav ul li a:visited {
+    text-decoration: none;
+}
+
+nav ul ol li a {
+    color: #761ced;
+}
+
+nav ul ol li a:hover {
+    color: #02d1bf;
+    background-color: white;
+}
+
+main,
+footer {
+    margin-left: 200px;
+    padding: 0px 10px 10px 20px;
+    max-width: 760px;
+}
+
+#tools-table {
+    width: 100%;
+}
+
+#tools-table,
+th,
+td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+
+#tools-table th,
+td {
+    padding: 10px;
+}
+
+#header-title {
+    margin: 0;
+}
+
+#header-title * {
+    padding: 0;
+    margin: 0;
+}
+
+#profile-pic {
+    border-radius: 50%;
+}
+
+#my-name {
+    color: #4d4d4d;
+}
+
+#wrapper {
+    margin: auto;
+    text-align: left;
+    max-width: 960px;
+}
+
+#fav-sites-table {
+    border: none;
+}
+
+#fav-sites-table {
+    border-collapse: collapse;
+}
+
+#fav-sites-table td {
+    vertical-align: top;
+}
+
+#homework-list {
+    list-style: none;
+}
+
+#homework-list li {
+    margin: 10px;
+    display: inline-block;
+}
+
+.bg-purple {
+    background-color: #e8dbf9;
+    padding: 5px;
+}
+
+.row {
+    width: 93%;
+    height: 240px;
+    margin: 20px auto;
+    display: flex;
+}
+
+
+/* zocial */
+
+[class*="zocial-"]:before {
+    font-family: 'zocial', sans-serif;
+}
+
+
+/* Animated strikethrough
+Credit to: http://codepen.io/EdenSG/pen/jPENoE/ */
+
+.strikethrough_animate {
+    display: inline-block;
+    position: relative;
+    color: grey;
+}
+
+.strikethrough_animate:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: -0.5em;
+    background: grey;
+    transform-origin: center left;
+    animation: strikethrough 1s 0.5s cubic-bezier(.55, 0, .1, 1) 1;
+    transition: transform 0.5s cubic-bezier(.55, 0, .1, 1);
+}
+
+
+/* Keyframes for initial animation */
+
+@keyframes strikethrough {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
