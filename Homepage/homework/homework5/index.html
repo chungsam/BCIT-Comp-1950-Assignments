@@ -1,0 +1,207 @@
+<!--
+    COMP1950
+    Instructor: Jeffrey Park
+    DTC Thur 6-9PM
+
+    Created by:
+    Sam Chung
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>COMP1950 - Homework 5</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style-print.css" media="print">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif|PT+Sans" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <header id="main-header" class="col-1">
+            <h1>BookLand</h1>
+        </header>
+
+        <div class="row">
+            <nav id="main-nav" class="col-1">
+                <ol id="main-nav-list-left" class="list-group left">
+                    <li><a href="http://www.bcitcomp.ca/students/schung81" class="list-group-item"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a></li>
+                    <li><a href="index.html" class="list-group-item"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; Another Link</a></li>
+                    <li><a href="index.html" class="list-group-item"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; Yet Another Link</a></li>
+                </ol>
+            </nav>
+        </div>
+
+        <main>
+            <div class="row">
+                <section id="book-review">
+                    <article id="article1" class="col-1">
+                        <section>
+                            <h1><span class="article-header">Book Recommendation </span></h1>
+                                <h2><span class="article-title">Peak: Secrets from the New Science of Expertise
+                            <br><span class="article-subtitle">By Anders Ericsson and Robert Pool</span></h2>
+                        </section>
+
+                        <figure>
+                            <img src="img/peak_book_cover.jpg" alt="Peak book image">
+                        </figure>
+
+                        <p> <span class="article-text-highlight">Ever feel a sense of wonder and awe of how some people display "super-human" abilities and think "I'd never be able to do something like that!"?</span></p>
+                        <p>Well, after reading this book, you'll come to realize that with enough time, perseverance and "deliberate"
+                            practice, you can learn (basically) anything you want!
+
+                        </p>
+                        <p>
+
+                            Anders Ericsson shares his decades-worth of research of how violin virtuosos, star athletes, and memory champions do seemingly
+                            impossible feats. He demystifies the whole "having the right genes" myth and teaches us how to
+                            learn and practice the right way. He shares the secrets of how virtuosos get to where they get.
+                            And the good news for all of us, Ericsson suggests, is that there is no secret to all this--we
+                            just have to put in the right amount of hours, and put in the right kind of "deliberate" practice.
+
+                        </p>
+
+                        <p> In essence, reading this book is "learning how to learn".</p>
+
+                        <p> Here are some memorable quotes:
+                            <blockquote>"A world in which deliberate practice is a normal part of life would be one in which people had
+                                more volition and satisfaction."</blockquote>
+                            <blockquote>“The reason that most people don’t possess these extraordinary physical capabilities isn’t because
+                                they don’t have the capacity for them, but rather because they’re satisfied to live in the
+                                comfortable rut of homeostasis and never do the work that is required to get out of it. They
+                                live in the world of “good enough.” The same thing is true for all the mental activities
+                                we engage in.” </blockquote>
+                            <blockquote>“A world in which deliberate practice is a normal part of life would be one in which people had
+                                more volition and satisfaction.” </blockquote>
+                        </p>
+
+                        <p>Enjoy!</p>
+
+
+                    </article>
+                </section>
+            </div>
+
+            <!--Parallax background-->
+            <div class="row" id="parallax-bg">
+            </div>
+            <!--End parallax background-->
+
+            <div class="row">
+                <section id="css-features">
+                    <article id="css-article1" class="col-2">
+                        <section>
+                            <h1>CSS3 Feature 1</h1>
+                        </section>
+
+                        <h2>Rotate</h2>
+                        <div><i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i></div>
+                        <p> The <code>rotate</code> attribute allows you to rotate the element by x degrees. <br><br>Here, I've animated the quote
+                            icon by defining custom keyframes "rotate" animation that starts from 0 degrees and ends at 360
+                            degrees:
+                        </p>
+                        <p>
+                            <code>
+                                <pre>
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+                                    </pre>
+                                
+                            </code>
+
+                        </p>
+                        <p>
+
+                            Supported on all major browsers.
+                        </p>
+                        <p>
+
+                            Here are some links for further research:
+                            <ul>
+                                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate">MDN official docs for <code>rotate</code></a></li>
+                                <li><a href="http://tutorialzine.com/2013/10/12-awesome-css3-features-you-can-finally-use">Tutorialzine: 12 Awesome New CSS3 Features</a></li>
+                            </ul>
+
+                        </p>
+
+                    </article>
+
+
+                    <article id="css-article2" class="col-2">
+                        <section>
+                            <h1>CSS3 Feature 2</h1>
+                        </section>
+
+                        <h2>Repeating radial gradient</h2>
+
+                        <div id="el4"></div>
+
+
+                        <p> In addition to linear gradients, CSS3 now offers a radial gradient, which you can repeat to create some cool patterns.
+                            <br>
+                            <br>
+                            Here's the CSS snippet:
+
+                        </p>
+                        <p>
+                            <code>
+                                <pre>
+#el4{
+    background:repeating-radial-gradient(
+        #b8e7bf, 
+        #b8e7bf 5px, 
+        white 5px, 
+        white 10px);
+}                       </pre>
+                                
+                            </code>
+
+                        </p>
+
+                         <p>
+
+                            Supported on all major browsers.
+                        </p>
+                        <p>
+
+                            Here are some links for further research:
+                            <ul>
+                                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/repeating-radial-gradient">MDN official docs for <code>repeating-radial-gradient</code></a></li>
+                                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images/Using_CSS_gradients#multiple_repeating_linear_gradients_with_angles">MDN official tutorial for using CSS gradients</a></li>
+                                <li><a href="http://tutorialzine.com/2013/10/12-awesome-css3-features-you-can-finally-use">Tutorialzine: 12 Awesome New CSS3 Features</a></li>
+                            </ul>
+
+                        </p>
+
+                    </article>
+                </section>
+
+            </div>
+
+        </main>
+
+        <footer>
+            Created by Sam Chung
+        </footer>
+
+
+    </div>
+
+</body>
+
+
+
+</html>

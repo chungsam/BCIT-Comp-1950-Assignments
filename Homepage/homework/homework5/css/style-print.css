@@ -1,0 +1,59 @@
+/*COMP1950
+Instructor: Jeffrey Park
+DTC Thur 6-9PM
+
+Created by:
+Sam Chung*/
+
+nav,
+img,
+#css-features i {
+    display: none;
+}
+
+#main-nav li {
+    display: none;
+}
+
+body,
+main,
+footer {
+    color: black;
+    float: none;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+
+a:link,
+a:visited {
+    color: #309;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a:link:after,
+a:visited:after {
+    content: " (URL: " attr(href) ") ";
+    font-size: 90%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    page-break-after: avoid;
+}
+
+/* Don't have page break for first article */
+#book-review,
+#article1 {
+    page-break-before: avoid;
+}
+
+article {
+    page-break-before: always;
+}

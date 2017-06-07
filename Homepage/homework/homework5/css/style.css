@@ -1,0 +1,246 @@
+/*COMP1950
+Instructor: Jeffrey Park
+DTC Thur 6-9PM
+
+Created by:
+Sam Chung*/
+
+header,
+body {
+    font-family: 'PT Serif', serif;
+    min-width: 360px;
+}
+
+main {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+
+
+#main-header {
+    background: url(../img/stack_of_books.jpg) no-repeat 50% 0;
+    color: whitesmoke;
+    text-shadow: 5px 5px 10px black, 0 0 5px #0000FF;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+#main-nav {
+    display: inline-block;
+    font-family: 'PT Sans', sans-serif;
+    margin-top: 10px;
+}
+
+#main-nav-list-left {
+    display: inline-block;
+}
+
+#main-nav ol {
+    list-style-type: none;
+}
+
+#main-nav li {
+    display: inline;
+}
+
+#main-nav a {
+    margin: 5px 5px 5px 5px;
+    padding: 10px;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+#main-nav a:link {
+    text-decoration: none;
+    color: #0a306d;
+}
+
+#main-nav a:visited {
+    color: #0a306d
+}
+
+#main-nav a:hover {
+    background-color: #4286f4;
+    color: white;
+}
+
+#main-nav a:active {
+    color: #0a306d
+}
+
+main,
+footer {
+    padding-left: 2em;
+}
+
+.container {
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.container,
+.row {
+    width: 100%;
+}
+
+.col-1 {
+    width: 100%;
+}
+
+.col-2 {
+    width: 48%;
+}
+
+.col-3 {
+    width: 31%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.row > section:first-child {
+    border-bottom: solid 2px gray;
+}
+
+article {
+    display: inline-block;
+    margin: 0 auto;
+    vertical-align: top;
+}
+
+article p {
+    padding: 10px 10px 10px 10px;
+}
+
+.article-header {
+    color: lightslategray;
+    text-transform: capitalize;
+    font-size: 1.2em;
+}
+
+.article-subtitle {
+    color: grey;
+    font-size: 0.7em;
+}
+
+.article-text-highlight {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+article blockquote {
+    color: grey;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+figure img {
+    width: 100%;
+}
+
+ul li {
+    list-style: none;
+}
+
+#parallax-bg {
+    background: url("../img/css3.jpg") no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#css-features section h1 {
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22));
+    background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22));
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    font-size: 3em;
+}
+
+
+footer {
+    padding: 25px;
+    clear: both;
+}
+
+
+
+/* CSS3 Feature 1: Animation using rotate()*/
+
+#css-features i {
+    animation: rotate 2s linear infinite;
+    display: inline-block;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* CSS3 Feature 2: Radial gradient 
+    Snippet taken from Tutorialzine: http://tutorialzine.com/2013/10/12-awesome-css3-features-you-can-finally-use
+*/
+#el4{
+    float: left;
+    margin: 10px 10px 10px 10px;
+    width: 94.5px;
+    height: 94.5px;
+    background:repeating-radial-gradient(#b8e7bf, #b8e7bf 5px, white 5px, white 10px);
+}
+
+
+/* Responsive layout */
+@media screen and (min-width: 0) and (max-width: 576px) {
+    .col-2,
+    .col-3 {
+        width: 100%;
+    }
+    #main-nav-list-left {
+        padding: 0 10px 0 10px;
+    }
+    #main-nav-list-left li {
+        display: inline-block;
+        padding: 0 12px 0 12px;
+    }
+    #main-nav-list-left li a {
+        margin: 0 auto 10px 0;
+        width: 80vw;
+        display: inline-block;
+        text-align: center;
+    }
+    article p {
+        padding: 10px 3px 10px 3px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .col-3 {
+        width: 48%;
+    }
+}
