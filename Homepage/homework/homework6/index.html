@@ -1,0 +1,194 @@
+<!--
+    COMP1950
+    Instructor: Jeffrey Park
+    DTC Thur 6-9PM
+
+    Created by:
+    Sam Chung
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.min.css" />
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- JavaScript-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.pagepiling.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <ul id="menu">
+            <li data-menuanchor="homepage"><a href="#homepage">Home</a></li>
+            <li data-menuanchor="customize-page"><a href="#customize-page">Customizations</a></li>
+            <li data-menuanchor="rotate-page"><a href="#rotate-page">Surprise!</a></li>
+            <li data-menuanchor="text-page"><a href="#text-page">Text</a></li>
+        </ul>
+        <div id="pagepiling">
+            <div class="container">
+                <div id="home" class="section">
+                    <div class="row">
+
+                        <header>
+                            <h1>COMP1950 - Homework 6</h1>
+                        </header>
+                    </div>
+                    <div class="row">
+                        <img src="img/pagepiling-plugin.gif" alt="pagepiling logo">
+                        <h2>pagepiling.js</h2>
+                        <p>
+                            <h3>A jQuery plugin that transforms your webpage into a series of full-screen, scrollable pages.</h3>
+                        </p>
+                        <br>
+                        <p>Visit <a href="https://github.com/alvarotrigo/pagePiling.js">this Github repo for downloads and documentation.</a></p>
+
+                    </div>
+                </div>
+                <div id="customize-page" class="section pp-scrollable">
+                    <div class="row">
+                        <h2>Customizations</h2>
+                        <p>To use the plugin, you have to have the following HTML structure:</p>
+                        <pre>
+                            <code>
+&lt;div id=pagepiling"&gt;
+	&lt;div class="section"&gt;Page1&lt;/div&gt;
+	&lt;div class="section"&gt;Page2&lt;/div&gt;
+	&lt;div class="section"&gt;Page3&lt;/div&gt;
+	&lt;div class="section"&gt;Page4&lt;/div&gt;
+&lt;/div&gt;
+                            </code>
+                        </pre>
+                        <p>Here's how you initialize the plugin and add some custom options (example from Github <a href="https://github.com/alvarotrigo/pagePiling.js">repo</a>)</p>
+                        <pre><code>
+$(document).ready(function() {
+	$('#pagepiling').pagepiling({
+	    menu: null,
+        direction: 'vertical',
+        verticalCentered: true,
+        sectionsColor: [],
+        anchors: [],
+        scrollingSpeed: 700,
+        easing: 'swing',
+        loopBottom: false,
+        loopTop: false,
+        css3: true,
+        navigation: {
+            'textColor': '#000',
+            'bulletsColor': '#000',
+            'position': 'right',
+            'tooltips': ['section1', 'section2', 'section3', 'section4']
+        },
+       	normalScrollElements: null,
+        normalScrollElementTouchThreshold: 5,
+        touchSensitivity: 5,
+        keyboardScrolling: true,
+        sectionSelector: '.section',
+        animateAnchor: false,
+
+		//events
+		onLeave: function(index, nextIndex, direction){},
+		afterLoad: function(anchorLink, index){},
+		afterRender: function(){},
+	});
+});
+                            
+                            </code></pre>
+                        <p>I've kept this page super simple, but you get the idea:</p>
+                        <pre><code>
+$(document).ready(function() {
+    $('#pagepiling').pagepiling({
+        // Pass in an options object when initializing
+        menu: "#menu",
+        anchors: ['homepage', 'customize-page', 'rotate-page', 'text-page'],
+        sectionsColor: ['#a19cfc', '#4BBFC3', '#7BAABE',  '#fca89c'],
+        verticalCentered: true
+    });
+})
+                            
+                            </code></pre>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+
+                    </div>
+                </div>
+                <div id="rotate-page" class="section">
+                    <div class="row">
+                        <img src="img/funny-cat.png" alt="funny cat">
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="row">
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque in nibh sed suscipit. Aliquam
+                            non ante nec diam ornare mattis at in sapien. Nunc vitae enim feugiat, luctus nibh ac, gravida
+                            lacus. Fusce eget mauris est. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                            per inceptos himenaeos. Nulla vel est nec nulla ullamcorper elementum. Cras faucibus tellus feugiat
+                            ex condimentum, eu imperdiet elit dapibus. Fusce pulvinar fermentum tortor sed luctus. Pellentesque
+                            interdum enim id fringilla ultricies.
+
+                        </p>
+                        <p>
+
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque in nibh sed suscipit. Aliquam non ante nec diam
+                            ornare mattis at in sapien. Nunc vitae enim feugiat, luctus nibh ac, gravida lacus. Fusce eget
+                            mauris est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                            himenaeos. Nulla vel est nec nulla ullamcorper elementum. Cras faucibus tellus feugiat ex condimentum,
+                            eu imperdiet elit dapibus. Fusce pulvinar fermentum tortor sed luctus. Pellentesque interdum
+                            enim id fringilla ultricies.
+
+                        </p>
+                        <p>
+
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque in nibh sed suscipit. Aliquam non ante nec diam
+                            ornare mattis at in sapien. Nunc vitae enim feugiat, luctus nibh ac, gravida lacus. Fusce eget
+                            mauris est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                            himenaeos. Nulla vel est nec nulla ullamcorper elementum. Cras faucibus tellus feugiat ex condimentum,
+                            eu imperdiet elit dapibus. Fusce pulvinar fermentum tortor sed luctus. Pellentesque interdum
+                            enim id fringilla ultricies.
+
+                        </p>
+                        <p>
+
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque in nibh sed suscipit. Aliquam non ante nec diam
+                            ornare mattis at in sapien. Nunc vitae enim feugiat, luctus nibh ac, gravida lacus. Fusce eget
+                            mauris est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                            himenaeos. Nulla vel est nec nulla ullamcorper elementum. Cras faucibus tellus feugiat ex condimentum,
+                            eu imperdiet elit dapibus. Fusce pulvinar fermentum tortor sed luctus. Pellentesque interdum
+                            enim id fringilla ultricies.
+
+                        </p>
+                        <br>
+                        <br>
+                        <br>
+
+                        <footer>
+                            Back to <a href="http://www.bcitcomp.ca/students/schung81">student homepage</a>
+                        </footer>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+/*COMP1950
+Instructor: Jeffrey Park
+DTC Thur 6-9PM
+
+Created by:
+Sam Chung*/
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+header {
+    margin-top: 50px;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40px;
+    z-index: 100;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    display: inline-block;
+    margin: 10px;
+    color: #000;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#menu li.active a {
+    color: #fff;
+}
+
+#menu li.active {
+    background: #666;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+#menu li a,
+#menu li.active a {
+    padding: 9px 18px;
+    display: block;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+#customize-page h2 {
+    margin-top: 100px;
+}
+
+#rotate-page img {
+    max-width: 80%;
+    animation: rotate 2s linear infinite;
+}
+
+li {
+    text-align: -webkit-match-parent;
+}
+
+.container {
+    width: 100%;
+}
+
+.row {
+    width: 80%;
+    padding: 0 50px 0 50px;
+}
+
+a:link,
+a:visited,
+a:after,
+a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+/* Custom Animation: rotate() */
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
